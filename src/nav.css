@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapi.com/css?family=Baloo+Thambi');
+
+body , html {
+    height: 100%;
+    
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.bg-img{
+    background-image: url('./img/back.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav{
+    position: fixed ;
+    bottom: 0;
+    padding-left: 0%;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0 ,0 ,0 , 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: flex;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #da2d2d;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+.nav__link--active{
+    color: green;
+}
+.appel{
+    width: 30%;
+    background-color: rgb(0, 4, 255);
+    border-radius: 30px;
+    color: white;
+}
+
+.hover:hover{
+    background-color: #cecccc;
+    border-radius: 30px;
+}
+.dash{
+    text-align: center ;
+    padding-top: 250px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo Thambi' , cursive;
+    font-size: 250% ;
+    
+}
+.dash >  span {
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100% {
+        color: fff;
+        text-shadow: 0 0 12px rgb(0, 4, 255), 0 0 50px rgb(0, 4, 255), 0 0 100px rgb(0, 4, 255) ;
+    }
+    10%, 90% {
+        color: #020720;
+        text-shadow: #020720;
+    }
+}
+.dash > span:nth-child(2){
+    animation-delay: 0.25s;
+}
+.dash > span:nth-child(3){
+    animation-delay:0.5s;
+}
+.dash > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.dash > span:nth-child(5){
+    animation-delay: 1s;
+}
+.dash > span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.dash > span:nth-child(7){
+    animation-delay: 1.50s;
+}
+.dash > span:nth-child(8){
+    animation-delay: 1.75s;
+}
+.dash > span:nth-last-child(9){
+    animation-delay: 2s;
+}
